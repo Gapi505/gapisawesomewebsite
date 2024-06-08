@@ -3,10 +3,4 @@ builder = "nodejs"
 cmd = "npm install && npm run build"
 
 [start]
-cmd = "npm start"
-
-[healthcheck]
-cmd = "curl -f http://localhost:3000/ || exit 1"
-interval = "30s"
-timeout = "10s"
-retries = 3
+cmd = "npm run start"
