@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "start": "vite preview --port 3000",
-    "build": "vite build"
+    "build": "vite build",
+    "start": "vite preview --port 3000"
   },
   "keywords": [],
   "author": "",
