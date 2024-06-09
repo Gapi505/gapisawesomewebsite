@@ -5,3 +5,31 @@ body{
     font-style: normal;
     color: white;
 }
+h1{
+    font-size: 2em;
+}
+#ferris{
+width: 50%;
+    height: auto;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.section-intro{
+    background-color: #2e2e2e;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.block{
+    background-color: #252525;
+    padding:0.5rem 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
