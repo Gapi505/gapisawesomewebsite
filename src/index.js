@@ -10,13 +10,14 @@ function handleMouseMove(event) {
             y: rect.top + rect.height / 2
         };
 
-        const distance = Math.sqrt(
-            Math.pow(event.clientX - imageCenter.x, 2) + Math.pow(event.clientY - imageCenter.y, 2)
-        );
+        // Calculate distance in vw
+        const distanceX = (event.clientX - imageCenter.x) / window.innerWidth * 100;
+        const distanceY = (event.clientY - imageCenter.y) / window.innerWidth * 100;
+        const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
 
-        const maxDistance = 300; // You can adjust this value based on your preference
-        const minSize = 20; // Minimum size in vw
-        const maxSize = 30; // Maximum size in vw
+        const maxDistance = 20; // Maximum distance in vw
+        const minSize = 10; // Minimum size in vw
+        const maxSize = 20; // Maximum size in vw
 
         if (distance < maxDistance) {
             const sizeIncrease = (1 - (distance / maxDistance)) * (maxSize - minSize);

@@ -38,12 +38,12 @@ width: 50%;
     height: 20vw;
     object-fit: contain;
     margin: 1rem;
-    border-radius: 10vw;
+    border-radius: 4vw;
 }
 
 .stuff-menu{
     width: auto;
-    height: 25vw;
+    height: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
