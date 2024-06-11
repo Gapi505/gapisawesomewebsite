@@ -33,3 +33,21 @@ width: 50%;
     justify-content: center;
     align-items: center;
 }
+.stuff-image{
+    width: 20vw;
+    height: 20vw;
+    object-fit: contain;
+    margin: 1rem;
+    border-radius: 10vw;
+}
+
+.stuff-menu{
+    width: auto;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    padding: 1rem;
+    border-radius: 10rem;
+}

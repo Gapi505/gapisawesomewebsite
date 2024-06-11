@@ -2,9 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.css',
+    entry: {
+        app: './src/index.js', // Entry point for JavaScript
+        style: './src/index.css' // Entry point for CSS
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -33,4 +36,3 @@ module.exports = {
         port: 9000
     }
 };
-
